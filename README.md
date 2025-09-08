@@ -69,18 +69,19 @@ npm run build
 firebase init hosting 
 firebase deploy
 
-exit
+---
 
 🔹 **Libraries Used**
 
- - React + Vite – MIT License
- - Firebase JS SDK – Apache 2.0 License
- - OpenCV.js (for auto-crop) – Apache 2.0 License
- - UUID (for unique file names) – MIT License
+- React + Vite – MIT License  
+- Firebase JS SDK – Apache 2.0 License  
+- OpenCV.js (for auto-crop) – Apache 2.0 License  
+- UUID (for unique file names) – MIT License  
 
 All dependencies are open-source and free to use in this project.
 
 ---
+
 
 🔹 **Trade-Offs & Improvements**
 
