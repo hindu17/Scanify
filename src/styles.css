@@ -1,0 +1,9 @@
+body { font-family: system-ui, Arial; margin: 0; padding: 24px; background:#f6f7fb; }
+.container { max-width: 1000px; margin: 0 auto; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px; }
+main { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+img { max-width:100%; height:auto; display:block; }
+.preview { display:flex; gap:12px; align-items:flex-start; }
+.status { margin-top:8px; font-size:0.95rem; }
+button { padding:8px 12px; border-radius:6px; border: none; cursor:pointer; }
+input { padding:8px; border-radius:6px; border:1px solid #ddd; }
