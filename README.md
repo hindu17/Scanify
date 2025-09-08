@@ -65,6 +65,9 @@ firebase init hosting
 
 firebase deploy
 
+```bash
+  exit
+
 ---
 
 🔹 **Libraries Used**
