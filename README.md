@@ -1,6 +1,6 @@
 # Scanify – Lightweight Document Scanner (React + Firebase)
 
-**Public app URL**: <https://scanify-7c308.web.app
+**Public app URL**: https://scanify-7c308.web.app
 
 🔹**Architecture Overview & Data Flow**
 
