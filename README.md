@@ -37,7 +37,34 @@
 6. Apply **perspective transform** to crop and flatten  
 7. Return **processed image** for preview and saving  
 
+
 ---
+
+✨ **Features**
+
+- **Auth**: Email/password (Firebase Auth)
+- **Upload**: PNG/JPEG; **PDF → image** via `pdf.js` (first page)
+- **Auto-Crop**: Simple background-trim that approximates a scanner crop
+- **Before/After**: Side-by-side preview
+- **Persistence**: Saves processed image (base64) + metadata in Firestore
+- **Gallery**: Lists previous uploads for the signed-in user
+- **Security**: Per-user isolation via Firestore rules
+- **No Storage Required**: Uses Firestore only (for small files)
+
+> ⚠️ **Note:** This demo stores images as base64 strings in Firestore for convenience. This is fine for *small* images but is **not** recommended for production or large files. Use Firebase **Storage** for real projects.
+
+---
+
+ 🧱 **Tech Stack**
+
+- Frontend: React (Vite)
+- PDF: `pdfjs-dist` (legacy build)
+- Auth & DB: Firebase Auth + Firestore
+- Styling: Vanilla CSS modules (lightweight)
+- OpenCV.js for advanced edge detection/perspective warp (can be added later).
+
+---
+
 
 ## 🔹 Setup Instructions
 
@@ -97,32 +124,6 @@ All dependencies are open-source and free to use in this project.
    - Improve edge detection with ML-based document boundary detection.
    - Add PDF export & multi-page scanning.
 
----
-
-✨ **Features**
-
-- **Auth**: Email/password (Firebase Auth)
-- **Upload**: PNG/JPEG; **PDF → image** via `pdf.js` (first page)
-- **Auto-Crop**: Simple background-trim that approximates a scanner crop
-- **Before/After**: Side-by-side preview
-- **Persistence**: Saves processed image (base64) + metadata in Firestore
-- **Gallery**: Lists previous uploads for the signed-in user
-- **Security**: Per-user isolation via Firestore rules
-- **No Storage Required**: Uses Firestore only (for small files)
-
-> ⚠️ **Note:** This demo stores images as base64 strings in Firestore for convenience. This is fine for *small* images but is **not** recommended for production or large files. Use Firebase **Storage** for real projects.
-
----
-
- 🧱 **Tech Stack**
-
-- Frontend: React (Vite)
-- PDF: `pdfjs-dist` (legacy build)
-- Auth & DB: Firebase Auth + Firestore
-- Styling: Vanilla CSS modules (lightweight)
-- OpenCV.js for advanced edge detection/perspective warp (can be added later).
-
----
 
 **Screenshots**
 
