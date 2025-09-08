@@ -18,10 +18,10 @@ Stores uploaded original documents and processed (cropped) versions.
 
 • **Data Flow**
 
---User uploads a file → stored in Firebase Storage.
---Download URLs + storage paths are saved in Firestore.
---Gallery listens to Firestore in real-time and renders previews.
---Deleting a file removes both the Storage objects and Firestore metadata.
+- User uploads a file → stored in Firebase Storage.
+- Download URLs + storage paths are saved in Firestore.
+- Gallery listens to Firestore in real-time and renders previews.
+- Deleting a file removes both the Storage objects and Firestore metadata.
 
 🔹 **Auto-Crop Algorithm**
 
