@@ -20,31 +20,44 @@ Stores uploaded original documents and processed (cropped) versions.
     1.User uploads a file → stored in Firebase Storage.
     
     2.Download URLs + storage paths are saved in Firestore.
+    
     3.Gallery listens to Firestore in real-time and renders previews.
+    
     4.Deleting a file removes both the Storage objects and Firestore metadata.
 
 🔹 **Auto-Crop Algorithm**
 
 1.Convert uploaded image to grayscale.
+
 2.Apply Gaussian blur to reduce noise.
+
 3.Detect edges using Canny edge detection.
+
 4.Find contours and approximate to a polygon.
+
 5.Select the largest quadrilateral (likely the document).
+
 6.Apply perspective transform to crop and flatten.
+
 7.Return processed image for preview and saving.
+
 
 🔹 **Setup Instructions**
 
 1.**Clone & install**
 
 git clone https://github.com/hindu17/Scanify.git
+
 cd docscanner
+
 npm install
 
 2.**Firebase setup**
 
 Create a Firebase project.
+
 Enable Authentication, Firestore, Storage, Hosting.
+
 Copy your Firebase config into firebaseConfig.js.
 
 3.**Run locally**
@@ -54,14 +67,19 @@ npm run dev
 4.**Build & Deploy (Firebase Hosting)**
 
 npm run build
+
 firebase init hosting 
+
 firebase deploy
 
 🔹 **Libraries Used**
 
    • React + Vite – MIT License
+   
    • Firebase JS SDK – Apache 2.0 License
+   
    • OpenCV.js (for auto-crop) – Apache 2.0 License
+   
    • UUID (for unique file names) – MIT License
 
 All dependencies are open-source and free to use in this project.
@@ -71,20 +89,25 @@ All dependencies are open-source and free to use in this project.
 • **Current trade-offs**
 
     Auto-crop runs client-side → can be slow for large images.
+    
     Storage cost grows with both original + processed files.
+    
     Simple authentication (no roles/permissions).
 
 • **Next improvements**
 
     Add bulk upload + batch processing.
+    
     Use Cloud Functions for server-side image processing.
+    
     Improve edge detection with ML-based document boundary detection.
+    
     Add PDF export & multi-page scanning.
 
 ✨ **Features**
 
 - **Auth**: Email/password (Firebase Auth)
-- **Upload: PNG/JPEG; **PDF → image** via `pdf.js` (first page)
+- **Upload**: PNG/JPEG; **PDF → image** via `pdf.js` (first page)
 - **Auto-Crop**: Simple background-trim that approximates a scanner crop
 - **Before/After**: Side-by-side preview
 - **Persistence**: Saves processed image (base64) + metadata in Firestore
