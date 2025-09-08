@@ -70,7 +70,9 @@
 
 ### 1. Clone & install
 git clone https://github.com/hindu17/Scanify.git
+
 cd docscanner
+
 npm install
 
 ---
@@ -89,5 +91,6 @@ npm install
 npm run dev
 
 
+4. Build & Deploy (Firebase Hosting)
 
 
