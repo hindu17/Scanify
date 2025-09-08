@@ -70,7 +70,9 @@
 1. **Clone & install**
    
 git clone https://github.com/hindu17/Scanify.git
+
 cd docscanner
+
 npm install
 
 
@@ -88,7 +90,51 @@ npm run dev
 4. **Build & Deploy (Firebase Hosting)**
 
 npm run build
-firebase init hosting 
+
+firebase init hosting
+
 firebase deploy
+
+---
+
+🔹 **Libraries Used**
+
+- React + Vite – MIT License  
+- Firebase JS SDK – Apache 2.0 License  
+- OpenCV.js (for auto-crop) – Apache 2.0 License  
+- UUID (for unique file names) – MIT License  
+
+All dependencies are open-source and free to use in this project.
+
+---
+
+
+🔹 **Trade-Offs & Improvements**
+
+• **Current trade-offs**
+
+   - Auto-crop runs client-side → can be slow for large images.
+   - Storage cost grows with both original + processed files.
+   - Simple authentication (no roles/permissions).
+
+• **Next improvements**
+
+   - Add bulk upload + batch processing.
+   - Use Cloud Functions for server-side image processing.
+   - Improve edge detection with ML-based document boundary detection.
+   - Add PDF export & multi-page scanning.
+
+
+**Screenshots**
+
+![sign up](image.png)
+![login in](image-1.png)
+![home](image-2.png)
+![upload](image-3.png)
+![crop](image-4.png)
+![gallery view 1](image-5.png)
+![gallery view 2](image-6.png)
+
+
 
 
