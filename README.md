@@ -65,32 +65,17 @@
 
 ---
 
-
 ## 🔹 Setup Instructions
 
-### 1. Clone & install
-git clone https://github.com/hindu17/Scanify.git
-
-cd docscanner
-
-npm install
-
----
-
-2. **Firebase Setup**
-
-- Create a Firebase project
-- Enable Authentication, Firestore, Storage, Hosting
-- Copy your Firebase config into `firebaseConfig.js`
-
----
-
-3. **Run locally**
+1. **Clone & install**
 
 ```bash
-npm run dev
+git clone https://github.com/hindu17/Scanify.git
+cd docscanner
+npm install
 
+2.Firebase Setup
 
-4. Build & Deploy (Firebase Hosting)
-
-
+Create a Firebase project
+Enable Authentication, Firestore, Storage, Hosting
+Copy your Firebase config into firebaseConfig.js
