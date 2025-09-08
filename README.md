@@ -17,25 +17,20 @@ Stores file metadata (URLs, paths, timestamps, user ID).
 Stores uploaded original documents and processed (cropped) versions.
 
 • **Data Flow**
-    User uploads a file → stored in Firebase Storage.
-    Download URLs + storage paths are saved in Firestore.
-    Gallery listens to Firestore in real-time and renders previews.
-    Deleting a file removes both the Storage objects and Firestore metadata.
+
+--User uploads a file → stored in Firebase Storage.
+--Download URLs + storage paths are saved in Firestore.
+--Gallery listens to Firestore in real-time and renders previews.
+--Deleting a file removes both the Storage objects and Firestore metadata.
 
 🔹 **Auto-Crop Algorithm**
 
 1.Convert uploaded image to grayscale.
-
 2.Apply Gaussian blur to reduce noise.
-
 3.Detect edges using Canny edge detection.
-
 4.Find contours and approximate to a polygon.
-
 5.Select the largest quadrilateral (likely the document).
-
 6.Apply perspective transform to crop and flatten.
-
 7.Return processed image for preview and saving.
 
 
