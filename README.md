@@ -65,6 +65,8 @@ firebase init hosting
 
 firebase deploy
 
+---
+
 🔹 **Libraries Used**
 
  - React + Vite – MIT License
@@ -73,6 +75,8 @@ firebase deploy
  - UUID (for unique file names) – MIT License
 
 All dependencies are open-source and free to use in this project.
+
+---
 
 🔹 **Trade-Offs & Improvements**
 
@@ -89,6 +93,8 @@ All dependencies are open-source and free to use in this project.
    - Improve edge detection with ML-based document boundary detection.
    - Add PDF export & multi-page scanning.
 
+---
+
 ✨ **Features**
 
 - **Auth**: Email/password (Firebase Auth)
@@ -102,6 +108,7 @@ All dependencies are open-source and free to use in this project.
 
 > ⚠️ **Note:** This demo stores images as base64 strings in Firestore for convenience. This is fine for *small* images but is **not** recommended for production or large files. Use Firebase **Storage** for real projects.
 
+---
 
  🧱 **Tech Stack**
 
@@ -110,6 +117,8 @@ All dependencies are open-source and free to use in this project.
 - Auth & DB: Firebase Auth + Firestore
 - Styling: Vanilla CSS modules (lightweight)
 - OpenCV.js for advanced edge detection/perspective warp (can be added later).
+
+---
 
 **Screenshots**
 
