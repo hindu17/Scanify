@@ -78,9 +78,9 @@ npm install
 
 2. **Firebase Setup**
 
--Create a Firebase project
--Enable Authentication, Firestore, Storage, Hosting
--Copy your Firebase config into firebaseConfig.js
+- Create a Firebase project
+- Enable Authentication, Firestore, Storage, Hosting
+- Copy your Firebase config into firebaseConfig.js
 
 3. **Run locally**
 
